@@ -1,0 +1,192 @@
+﻿/* Article Page Layout - Start*/
+.telenor-articlepage-title {color:#0091d2;font-size:2.77em;font-weight:200;padding-bottom:5px;}
+.telenor-articlepage-aligncenter {flex-align:center}
+.telenor-articlepage-publishingrollupimage {margin-bottom:0px}
+.telenor-articlepage-introduction {color:#0091d2; margin-bottom:20px;float:left;padding-top:5px;font-size:1.3em;font-weight:300;}
+.telenor-articlepage-WithoutRollUpImage_PageContent {width:70%;float:left}
+.telenor-articlepage-WithoutRollUpImage_CaptionImage {float:right}
+.telenor-articlepage-publishingrollupimage .ms-rtestate-field img {
+    max-width:100%;
+}
+.telenor-articlepage-imagecaption .ms-rtestate-field p {
+    font-size:0.88em;
+    padding-top:5px;
+    padding-bottom:5px;
+    font-style:italic;
+}
+div.edit-mode-panel { background-color: rgb(255, 255, 255); padding: 0px 0px 0px 0px;}
+div#contentRow { padding-top: 0px; }
+.outo-clear{ clear:both;padding:0!important;margin:0!important;border:0!important;}
+.telenor-mainpage-rightcol-rating {
+    text-align: left;
+    padding:5px;
+}
+.telenor-mainpage-rightcol-contact {
+    /*min-height:50px;
+      background-color:lightgray;*/
+    padding:10px;
+    margin-top:5px;
+}
+.telenor-mainpage-rightcol-contactfield {
+    margin: 10px;
+}
+div.telenor-floatleft-boxedview {
+    float:left;
+    width:50%;
+}
+/*Article Page Layout - End*/
+/*Article page comments section style - Start*/
+.telenor-post-details
+{
+	width:14%;
+	text-align: center;
+	vertical-align: text-top;
+}
+.telenor-post-remove
+{
+	width:25%;
+	text-align: right;
+    vertical-align:top;
+}
+.telenor-post-picture
+{
+	height:48px;
+	width:48px;
+	border: 1px solid #BFBFBF;
+    padding: 2px;
+    text-align: center;	
+    vertical-align:top;
+}
+.telenor-post-body {
+    width:61%;
+    vertical-align:top;
+}
+.telenor-reply-div
+{
+    margin-bottom:3px;
+}
+.telenor-modal {
+    display:    none;
+    position:   relative;
+    z-index:    1000;
+    height:     100%;
+    width:      100%;
+    
+}
+.telenor-maintextarea {
+   width:99%;
+   height:72px;
+   resize: none;
+   padding:0px;
+}
+.telenor-submit-comment
+{
+	text-align:right;
+	padding-top:10px;
+	/*padding-right:20px;*/
+}
+.telenor-separator
+{
+	color:#606060;
+	border-top-width:0px;
+	border-left-width:0px;
+	border-right-width:0px;
+	border-bottom-width:0px;
+}
+.telenor-rowseparator
+{
+	height: 10px;
+}
+.telenor-spacer
+{
+	padding-left:5px;	
+}
+.telenor-floatleft
+{
+   float:left;
+}
+.telenor-floatright
+{
+   float:right;
+}
+.telenor-edittextarea {
+   width:67%;
+   height:72px;
+   resize: none;
+}
+.telenor-replytextarea {
+   width:67%;
+   height:72px;
+   resize: none;
+}
+div.telenor-div-bottomborder {
+    border-bottom: 1px solid #727272;
+}
+.telenor-mainpage-leftcol {float: left; width: 15% ; margin-right:1%; margin-left:1%}
+.telenor-mainpage-rightcol {width: 15%; float: right ; margin-right:1%; margin-left:1%}
+.telenor-mainpage-midcol {width: 64%; float: left ; margin-right:1%; margin-left:1%}
+/*Article page comments section style - End*/
+
+/*Article page summary links style - Start*/
+#localisationsummarylink .dfwp-list li {
+    display:inline;
+    float: left; 
+    padding: 0 5px;
+}
+#localisationsummarylink .dfwp-column {
+    margin-left: 0 !important;
+}
+#localisationsummarylink .dfwp-list ul
+{
+    list-style: none; 
+    margin: 0; 
+    padding:0;
+}
+.summarylinkavailableindiv {
+    float: left;
+    /*padding-top:5px;*/
+}
+.summarylinkdiv {
+    float: left;
+}
+.summarylinkdiv div.item {
+    padding: 0 !important;
+}
+
+/*Article page summary links style - Ends*/
+/* News Center Display Template Styles*/
+.telenor-largePictureImageContainer {
+   float:left;width:45%;
+}
+telenor-largePictureImageContainer-blue {
+   float:left;padding-left:10px;color:#0091d2;
+}
+.telenor-picture3LinesDataContainer {
+    float:left;
+    margin-left:10px;
+}
+
+.telenor-timeformat {
+   color:gray;
+}
+
+.telenor-timeformat-padded {
+   color:gray;padding-left: 10px;
+}
+  .telenor-rollupdescription-padded {
+   color:gray; padding-left: 10px;
+}
+ 
+
+.telenor-rollupdescription {
+color:black;
+}
+.datespacerdiv {
+    width:10px;
+    float:left;
+}
+/* News Center Display Template Styles*/
+
+.telenor-mainpage-rightcol-contact table.ms-usereditor {
+    width: 100%;
+}

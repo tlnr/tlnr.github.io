@@ -1,0 +1,1 @@
+﻿var scriptKey = "telenor_start.js"; SP.SOD.registerSod(scriptKey, "/style library/wave15.portal/common/telenor_start.js"); LoadSodByKey(NormalizeSodKey(scriptKey));

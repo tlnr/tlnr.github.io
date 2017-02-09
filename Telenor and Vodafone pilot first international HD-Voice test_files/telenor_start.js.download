@@ -1,0 +1,1 @@
+﻿function waitForLoad() { if (_spBodyOnLoadCalled) { SP.SOD.notifyScriptLoadedAndExecuteWaitingJobs("telenor_start.js"); return } startTimer() } function startTimer() { setTimeout(waitForLoad, 100) } SP.SOD.executeFunc("sp.js", "SP.ClientContext", function () { waitForLoad() })

@@ -1,0 +1,51 @@
+﻿body{background-color:#fefefe}
+ul.dynamic li.dynamic .menu-item-text{color:#fff!important}
+ul.dynamic{background-color:#00ACE7!important;width:200px!important;box-shadow:none!important;line-height:25px!important}
+ul.dynamic li.dynamic:hover{background-color:#33bdec}
+td.ms-cui-gallery-td{vertical-align:top}
+td.ms-cui-gallery-td div{height:auto!important}
+div#siteIcon{margin-left:20px}
+div#sideNavBox{width:200px;margin-left:0;float:none}
+div#contentRow{display:inline-block;width:100%;margin:0;padding:0}
+div#s4-titleRow,div.ms-breadcrumb-box{height:auto}
+div.ms-breadcrumb-top{white-space:normal;width:auto}
+ul.root.static li.static a.telenor-topnavnode-hover{background-color:#00ACE7;color:#fff}
+ul.root li.dynamic-children span.ms-navedit-flyoutArrow{padding-right:0;background-image:none}
+.ms-core-listMenu-horizontalBox ul.root li.static > a{margin-left:-10px;margin-right:15px;padding:5px 10px}
+ul.root ul.dynamic{border-color:transparent}
+div#titleAreaBox{margin:0}
+div#suiteBarLeft{overflow:hidden}
+.telenor-container{width:1004px;text-align:left}
+.telenor-colLong{width:530px;max-width:530px;padding-left:5px;padding-right:5px}
+.telenor-colShort{width:220px;max-width:220px;padding-left:6px;padding-right:6px}
+.telenor-colHalf{width:50%}
+.telenor-footer{width:100%;display:inline-block;text-align:right;vertical-align:bottom;margin-top:20px}
+.telenor-footer p{padding-top:5px;border-top:1px #ccc solid;font-size:.85em}
+.telenor-item-contact .telenor-contact-role{margin-top:5px}
+.telenor-page-title{font-size:1.8em;font-weight:300;margin-bottom:10px}
+.telenor-banner{margin-top:10px;margin-bottom:10px}
+#contentRow div.ms-srch-siteSearchResults{margin-left:232px;margin-right:232px;padding-left:5px;padding-right:5px}
+div.ms-SPZone.ms-webpart-zone,div.ms-SPZone.ms-webpart-zone > div{border:none 0;padding:0!important}
+#MSOTlPn_MainTD{position:absolute}
+.cbs-Detail{margin-left:0!important}
+ul.cbs-List{margin:0!important}
+.telenor-srch-item a,.telenor-srch-item a:visited,.telenor-srch-item a:hover{text-decoration:none}
+h1.ms-core-pageTitle{white-space:normal}
+.ms-rteStyle-Facts-left{-ms-name:"Facts left";float:left;width:198px;border-left:1px solid #d0d0d0;margin:0 15px 15px 0;padding:10px 0 10px 7px}
+.ms-rteStyle-Facts-right{-ms-name:"Facts right";float:right;width:198px;border-left:1px solid #d0d0d0;margin:0 0 15px 15px;padding:10px 0 10px 7px}
+.ms-rteStyle-Facts-fullwidth{-ms-name:"Facts fullwidth";width:100%;border-left:1px solid #d0d0d0;padding:10px 0 10px 7px}
+.ms-rteStyle-Quotes-left{-ms-name:"Quotes left";float:left;width:198px;font-size:20px;line-height:26px;margin:5px 15px 15px 0}
+.ms-rteStyle-Quotes-right{-ms-name:"Quotes right";float:right;width:198px;font-size:20px;line-height:26px;margin:5px 0 15px 15px}
+.ms-rteStyle-Quoter{-ms-name:Quoter;font-size:11px;float:right}
+.ms-rteStyle-Silverheading{-ms-name:"Silver Heading";color:#424a52;background:transparent url(/_layouts/images/TelenorWoW/webpart_title_bg.png) repeat-x scroll;border-top:1px solid #d0d0d0;height:25px;text-transform:uppercase;display:block;font-size:12px;margin:-10px -7px 7px;padding:2px 0 2px 7px}
+.ms-rteStyle-Image-left{-ms-name:"Image left";float:left;width:198px;padding:7px 7px 7px 0}
+.ms-rteStyle-Image-right{-ms-name:"Image right";float:right;width:198px;padding:7px 0 7px 7px}
+.ms-rteStyle-facts-right{-ms-name:"Facts right"}
+div.telenor-item-news-srch h3.cbs-picture3LinesLine1{color:#0091d2}
+div.telenor-item-news-srch .cbs-picture3LinesLine2{color:gray}
+div.telenor-item-news-srch .cbs-picture3LinesLine3{color:#000}
+.ms-core-listMenu-horizontalBox .dynamic-children.additional-background,div#contentBox0{display:block}
+div#SearchBox .ms-srch-sb input,div.ms-breadcrumb-box,div.ms-mpSearchBox{width:auto}
+td.ms-vb nobr {white-space: normal} 
+div nobr {white-space: normal} 
+#s4-bodyContainer > .telenor-container{margin-left:16px !important}

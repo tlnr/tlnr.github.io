@@ -1,0 +1,70 @@
+var pageListId = _spPageContextInfo.pageListId; 
+    var pageItemId = _spPageContextInfo.pageItemId; 
+    var context; 
+    var items; 
+    var userItems; 
+ 
+    var clicked = false; 
+    var likedby; 
+ 
+    function LikePage(b) { 
+		$('#btnLike').attr('disabled', true);
+		$('#btnUnlike').attr('disabled', true);
+        var aContextObject = new SP.ClientContext.get_current(); 
+        EnsureScriptFunc('reputation.js', 'Microsoft.Office.Server.ReputationModel.Reputation', function () { 
+            Microsoft.Office.Server.ReputationModel.Reputation.setLike(aContextObject, pageListId, pageItemId, b); 
+            aContextObject.executeQueryAsync( 
+                function () { 
+                    GetLikeCount(); 
+                }, function (sender, args) { 
+                    //alert(args.get_message()); 
+                }); 
+        }); 
+    } 
+    function GetLikeCount() { 
+        var acontext = new SP.ClientContext.get_current(); 
+        var alist = acontext.get_web().get_lists().getById(pageListId); 
+        var aitem = alist.getItemById(pageItemId); 
+        var liked = false; 
+        acontext.load(aitem, "LikedBy", "ID", "LikesCount"); 
+        acontext.executeQueryAsync(Function.createDelegate(this, function (success) { 
+            // Check if the user id of the current users is in the collection LikedBy.  
+            likedby = aitem.get_item('LikedBy'); 
+            var itemc = aitem.get_item('LikesCount'); 
+            if (!SP.ScriptHelpers.isNullOrUndefined(likedby)) { 
+                for (var i = 0; i < likedby.length; i++) { 
+                    var user = likedby[i]; 
+                    if (user.get_lookupId() == _spPageContextInfo.userId) { 
+                        //break the loop 
+                        liked = true; 
+                        break; 
+                    } 
+                } 
+            } 
+			$('#btnLike').attr('disabled', false);
+			$('#btnUnlike').attr('disabled', false);
+            if (!liked) { 
+                $("#btnLike").show(); 
+                $("#btnUnlike").hide(); 
+            } 
+            else { 
+                $("#btnLike").hide(); 
+                $("#btnUnlike").show(); 
+            } 
+            if (SP.ScriptHelpers.isNullOrUndefined(itemc)) { 
+                itemc = 0; 
+            } 
+            if(itemc.toString()== "0"){
+            $("#lblLikeCount").html(itemc.toString()); 
+            }
+            else{
+				$("#lblLikeCount").html('<img src="/_layouts/15/images/LikeFull.11x11x32.png?rev=42"> '+itemc.toString()+ " Likes "); 
+				$("#lblLikeCount").append("&nbsp;");
+				}
+        }), Function.createDelegate(this, function (sender, args) { 
+        })); 
+    } 
+   //_spBodyOnLoadFunctionNames.push("GetLikeCount");
+   $(document).ready(function(){
+  SP.SOD.executeFunc('SP.js', 'SP.ClientContext',GetLikeCount);
+	});
